@@ -1,7 +1,6 @@
 #![allow(non_snake_case)]
 
 use std::error::Error;
-use std::fs;
 
 const INPUT: &str = include_str!("../input.txt");
 
@@ -14,8 +13,8 @@ fn part2(input: &str) -> u32 {
 }
 
 fn main() -> Result<(), Box<dyn Error>> {
-    println!("{}", part1(input));
-    println!("{}", part2(input));
+    println!("part 1: {}", part1(INPUT));
+    println!("part 2: {}", part2(INPUT));
 
     Ok(())
 }
